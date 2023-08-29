@@ -9,7 +9,7 @@ This C# project uses <a href="https://www.vintasoft.com/vsimaging-dotnet-index.h
 
 
 ## Screenshot
-<img src="vintasoft-image-processing-demo.png" alt="VintaSoft Image Processing Demo">
+<img src="vintasoft-image-processing-demo.png" title="VintaSoft Image Processing Demo">
 
 
 ## Usage
