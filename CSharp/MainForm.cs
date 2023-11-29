@@ -699,6 +699,7 @@ namespace ImageProcessingDemo
                 new Vintasoft.Imaging.ImageProcessing.Document.RestoreTextFromHalftoneCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Document.DeskewCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Document.DeskewDocumentImageCommand(),
+                new Vintasoft.Imaging.ImageProcessing.Document.DocumentPerspectiveCorrectionCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Document.SmoothingCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Document.HolePunchFillingCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand(),
