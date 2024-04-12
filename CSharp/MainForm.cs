@@ -176,7 +176,7 @@ namespace ImageProcessingDemo
         #region 'File' menu
 
         /// <summary>
-        /// Handles the Click event of OpenToolStripMenuItem object.
+        /// Handles the Click event of openToolStripMenuItem object.
         /// </summary>
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -212,7 +212,7 @@ namespace ImageProcessingDemo
         }
 
         /// <summary>
-        /// Handles the Click event of SaveAsToolStripMenuItem object.
+        /// Handles the Click event of saveAsToolStripMenuItem object.
         /// </summary>
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -235,7 +235,7 @@ namespace ImageProcessingDemo
         }
 
         /// <summary>
-        /// Handles the Click event of CloseToolStripMenuItem object.
+        /// Handles the Click event of closeToolStripMenuItem object.
         /// </summary>
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -246,7 +246,7 @@ namespace ImageProcessingDemo
         }
 
         /// <summary>
-        /// Handles the Click event of ExitToolStripMenuItem object.
+        /// Handles the Click event of exitToolStripMenuItem object.
         /// </summary>
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -259,7 +259,7 @@ namespace ImageProcessingDemo
         #region 'View' menu
 
         /// <summary>
-        /// Handles the Click event of ImageScale property of ImageViewer object.
+        /// Handles the ImageScale_Click event of imageViewer object.
         /// </summary>
         private void imageViewer_ImageScale_Click(object sender, EventArgs e)
         {
@@ -286,7 +286,7 @@ namespace ImageProcessingDemo
         }
 
         /// <summary>
-        /// Handles the Click event of ImageViewerSettingsToolStripMenuItem object.
+        /// Handles the Click event of imageViewerSettingsToolStripMenuItem object.
         /// </summary>
         private void imageViewerSettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -301,7 +301,7 @@ namespace ImageProcessingDemo
         }
 
         /// <summary>
-        /// Handles the Click event of ProcessingViewerSubMenuItem object.
+        /// Handles the Click event of processingViewerSubMenuItem object.
         /// </summary>
         private void processingViewerSubMenuItem_Click(object sender, EventArgs e)
         {
@@ -349,7 +349,7 @@ namespace ImageProcessingDemo
         }
 
         /// <summary>
-        /// Handles the Click event of SettingsToolStripMenuItem object.
+        /// Handles the Click event of settingsToolStripMenuItem object.
         /// </summary>
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -368,7 +368,7 @@ namespace ImageProcessingDemo
         }
 
         /// <summary>
-        /// Handles the FormClosing event of PaletteSettingsForm object.
+        /// Handles the FormClosing event of paletteSettingsForm object.
         /// </summary>
         private void paletteSettingsForm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -382,7 +382,7 @@ namespace ImageProcessingDemo
         #region 'Image processing' menu
 
         /// <summary>
-        /// Handles the CheckedChanged event of UseMultithreadingToolStripMenuItem object.
+        /// Handles the CheckedChanged event of useMultithreadingToolStripMenuItem object.
         /// </summary>
         private void useMultithreadingToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
         {
@@ -390,7 +390,7 @@ namespace ImageProcessingDemo
         }
 
         /// <summary>
-        /// Handles the Click event of LoadPathsFromMetadataToolStripMenuItem object.
+        /// Handles the Click event of loadPathsFromMetadataToolStripMenuItem object.
         /// </summary>
         private void loadPathsFromMetadataToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -444,7 +444,7 @@ namespace ImageProcessingDemo
         #region 'Help' menu
 
         /// <summary>
-        /// Handles the Click event of AboutToolStripMenuItem object.
+        /// Handles the Click event of aboutToolStripMenuItem object.
         /// </summary>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -460,7 +460,7 @@ namespace ImageProcessingDemo
         #region Image Processing control
 
         /// <summary>
-        /// Handles the ExecuteCommandStarted event of ImageProcessingControl1 object.
+        /// Handles the ExecuteCommandStarted event of imageProcessingControl1 object.
         /// </summary>
         private void imageProcessingControl1_ExecuteCommandStarted(object sender, EventArgs e)
         {
@@ -469,7 +469,7 @@ namespace ImageProcessingDemo
         }
 
         /// <summary>
-        /// Handles the ExecuteCommandProgress event of ImageProcessingControl1 object.
+        /// Handles the ExecuteCommandProgress event of imageProcessingControl1 object.
         /// </summary>
         private void imageProcessingControl1_ExecuteCommandProgress(object sender, ImageProcessingProgressEventArgs e)
         {
@@ -479,7 +479,7 @@ namespace ImageProcessingDemo
         }
 
         /// <summary>
-        /// Handles the ExecuteCommandFinished event of ImageProcessingControl1 object.
+        /// Handles the ExecuteCommandFinished event of imageProcessingControl1 object.
         /// </summary>
         private void imageProcessingControl1_ExecuteCommandFinished(object sender, EventArgs e)
         {
@@ -488,7 +488,7 @@ namespace ImageProcessingDemo
         }
 
         /// <summary>
-        /// Handles the ProcessedImageReceived event of ImageProcessingControl1 object.
+        /// Handles the ProcessedImageReceived event of imageProcessingControl1 object.
         /// </summary>
         private void imageProcessingControl1_ProcessedImageReceived(object sender, ImageEventArgs e)
         {

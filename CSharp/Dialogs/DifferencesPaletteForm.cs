@@ -109,7 +109,7 @@ namespace ImageProcessingDemo.Dialogs
         #region UI
 
         /// <summary>
-        /// Handles the SelectedIndexChanged event of PaletteGammaComboBox object.
+        /// Handles the SelectedIndexChanged event of paletteGammaComboBox object.
         /// </summary>
         private void paletteGammaComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -148,7 +148,7 @@ namespace ImageProcessingDemo.Dialogs
         }
 
         /// <summary>
-        /// Handles the ValueChanged event of CriticalLevelTrackBar object.
+        /// Handles the ValueChanged event of criticalLevelTrackBar object.
         /// </summary>
         private void criticalLevelTrackBar_ValueChanged(object sender, EventArgs e)
         {
