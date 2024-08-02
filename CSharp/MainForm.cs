@@ -704,6 +704,7 @@ namespace ImageProcessingDemo
                 new Vintasoft.Imaging.ImageProcessing.Document.HolePunchFillingCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Document.HolePunchRemovalCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Document.LineRemovalCommand(),
+                new Vintasoft.Imaging.ImageProcessing.Document.DottedLineRemovalCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Document.ShapeRemovalCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Document.AutoTextInvertCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Document.DespeckleCommand(),
