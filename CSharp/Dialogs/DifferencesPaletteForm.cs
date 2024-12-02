@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -72,6 +73,7 @@ namespace ImageProcessingDemo.Dialogs
         /// <summary>
         /// Gets or sets the palette of the processed image.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Vintasoft.Imaging.Palette SourcePalette
         {
             get

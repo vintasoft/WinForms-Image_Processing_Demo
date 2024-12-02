@@ -15,6 +15,7 @@ using DemosCommonCode.Imaging.Codecs;
 using ImageProcessingDemo.Dialogs;
 using Vintasoft.Imaging.Drawing.Gdi;
 using Vintasoft.Imaging.Drawing;
+using System.ComponentModel;
 
 namespace ImageProcessingDemo
 {
@@ -124,6 +125,7 @@ namespace ImageProcessingDemo
         /// <summary>
         /// Gets or sets a value indicating whether image is processing.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal bool IsImageProcessing
         {
             get
@@ -141,6 +143,7 @@ namespace ImageProcessingDemo
         /// <summary>
         /// Gets or sets a value indicating whether image is saving.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal bool IsImageSaving
         {
             get
