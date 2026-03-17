@@ -1,4 +1,4 @@
-namespace ImageProcessingDemo
+﻿namespace ImageProcessingDemo
 {
     partial class MainForm
     {
@@ -72,9 +72,9 @@ namespace ImageProcessingDemo
             this.openImageFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveImageFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.toolStripPanel1 = new System.Windows.Forms.ToolStripPanel();
-            this.viewerToolStrip = new DemosCommonCode.Imaging.ImageViewerToolStrip();
-            this.visualToolsToolStrip1 = new DemosCommonCode.Imaging.VisualToolsToolStrip();
-            this.imageProcessingControl1 = new DemosCommonCode.ImageProcessingControl();
+            this.viewerToolStrip = new CommonCode.Imaging.ImageViewerToolStrip();
+            this.visualToolsToolStrip1 = new CommonCode.Imaging.VisualToolsToolStrip();
+            this.imageProcessingControl1 = new CommonCode.ImageProcessingControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.mainMenu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -511,7 +511,7 @@ namespace ImageProcessingDemo
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private DemosCommonCode.Imaging.ImageViewerToolStrip viewerToolStrip;
+        private CommonCode.Imaging.ImageViewerToolStrip viewerToolStrip;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
@@ -539,7 +539,7 @@ namespace ImageProcessingDemo
         private System.Windows.Forms.ToolStripMenuItem imageProcessingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem useMultithreadingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadPathsFromMetadataToolStripMenuItem;
-        private DemosCommonCode.ImageProcessingControl imageProcessingControl1;
+        private CommonCode.ImageProcessingControl imageProcessingControl1;
         private System.Windows.Forms.ToolStripMenuItem processingViewerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem processedImageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem differenceBySourceToolStripMenuItem;
@@ -550,7 +550,7 @@ namespace ImageProcessingDemo
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripPanel toolStripPanel1;
-        private DemosCommonCode.Imaging.VisualToolsToolStrip visualToolsToolStrip1;
+        private CommonCode.Imaging.VisualToolsToolStrip visualToolsToolStrip1;
         private System.Windows.Forms.ToolStripMenuItem visualToolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.Panel panel1;
