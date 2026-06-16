@@ -64,15 +64,10 @@ namespace ImageProcessingDemo
         #region Constructors
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MainForm"/> class.
+        /// Initializes the <see cref="MainForm"/> class.
         /// </summary>
-        public MainForm()
+        static MainForm()
         {
-            // register the evaluation license for VintaSoft Imaging .NET SDK
-            Vintasoft.Imaging.ImagingGlobalSettings.Register("REG_USER", "REG_EMAIL", "EXPIRATION_DATE", "REG_CODE");
-
-            InitializeComponent();
-
             Jbig2AssemblyLoader.Load();
             Jpeg2000AssemblyLoader.Load();
             RawAssemblyLoader.Load();
@@ -81,6 +76,17 @@ namespace ImageProcessingDemo
             DocxAssemblyLoader.Load();
 
             ImagingTypeEditorRegistrator.Register();
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainForm"/> class.
+        /// </summary>
+        public MainForm()
+        {
+            // register the evaluation license for VintaSoft Imaging .NET SDK
+            Vintasoft.Imaging.ImagingGlobalSettings.Register("REG_USER", "REG_EMAIL", "EXPIRATION_DATE", "REG_CODE");
+
+            InitializeComponent();
 
             SelectionVisualToolActionFactory.CreateActions(visualToolsToolStrip1);
 
@@ -687,7 +693,8 @@ namespace ImageProcessingDemo
                 new Vintasoft.Imaging.ImageProcessing.Info.DocumentSegmentationCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Info.ImageSegmentationCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Info.GetTextOrientationCommand(),
-                new Vintasoft.Imaging.ImageProcessing.Info.GetDocumentImageRotationAngleCommand()
+                new Vintasoft.Imaging.ImageProcessing.Info.GetDocumentImageRotationAngleCommand(),
+                new Vintasoft.Imaging.ImageProcessing.Info.LineRecognitionCommand()
 #endif
             };
 
