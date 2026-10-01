@@ -1,21 +1,19 @@
-﻿using System;
+﻿using CommonCode;
+using CommonCode.Imaging;
+using CommonCode.Imaging.Codecs;
+using ImageProcessingDemo.Dialogs;
+using System;
 using System.Collections.Generic;
-using System.Drawing.Drawing2D;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 using Vintasoft.Imaging;
+using Vintasoft.Imaging.Drawing;
+using Vintasoft.Imaging.Drawing.Gdi;
 using Vintasoft.Imaging.ImageProcessing;
 using Vintasoft.Imaging.Metadata;
 using Vintasoft.Imaging.UI;
 using Vintasoft.Imaging.UI.VisualTools;
-
-using CommonCode;
-using CommonCode.Imaging;
-using CommonCode.Imaging.Codecs;
-using ImageProcessingDemo.Dialogs;
-using Vintasoft.Imaging.Drawing.Gdi;
-using Vintasoft.Imaging.Drawing;
-using System.ComponentModel;
 
 namespace ImageProcessingDemo
 {
@@ -74,6 +72,12 @@ namespace ImageProcessingDemo
             DicomAssemblyLoader.Load();
             PdfAssemblyLoader.Load();
             DocxAssemblyLoader.Load();
+
+#if !REMOVE_PDF_PLUGIN && !REMOVE_DOCCLEANUP_PLUGIN
+            // register PdfLineRecognitionCommand that finds lines
+            // on vector PDF page if image is associated with PDF page
+            Vintasoft.Imaging.ImageProcessing.Info.PdfLineRecognitionCommand.Register();
+#endif
 
             ImagingTypeEditorRegistrator.Register();
         }
@@ -430,7 +434,7 @@ namespace ImageProcessingDemo
                     }
 
                     if (paths.PointCount > 0)
-                    {                        
+                    {
                         // create selection tool with loaded paths
                         PathSelectionRegion selection = new PathSelectionRegion(paths.Source);
                         selection.InteractionController = selection.TransformInteractionController;
@@ -694,7 +698,8 @@ namespace ImageProcessingDemo
                 new Vintasoft.Imaging.ImageProcessing.Info.ImageSegmentationCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Info.GetTextOrientationCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Info.GetDocumentImageRotationAngleCommand(),
-                new Vintasoft.Imaging.ImageProcessing.Info.LineRecognitionCommand()
+                new Vintasoft.Imaging.ImageProcessing.Info.LineRecognitionCommand(),
+                new Vintasoft.Imaging.ImageProcessing.Info.TableDetection.TableWithBordersDetectionCommand()
 #endif
             };
 
@@ -721,7 +726,8 @@ namespace ImageProcessingDemo
                 new Vintasoft.Imaging.ImageProcessing.Document.BorderRemovalCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Document.AutoTextOrientationCommand(),
                 new Vintasoft.Imaging.ImageProcessing.Document.AdvancedReplaceColorCommand(),
-                new Vintasoft.Imaging.ImageProcessing.Document.ColorNoiseClearCommand()};
+                new Vintasoft.Imaging.ImageProcessing.Document.ColorNoiseClearCommand()
+            };
             availableProcessingCommandGroups.Add("Document Cleanup", documentCleanupCommands);
 #endif
 
